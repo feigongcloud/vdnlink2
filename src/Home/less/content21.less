@@ -1,0 +1,158 @@
+@content21: content21;
+.@{content21}-wrapper {
+  height: 300px;
+  background: url("https://g1.vdnlink.cn/productfreebg.png") no-repeat bottom;
+  background-size: cover;
+  background-size: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 86px;
+  &.home-page-wrapper {
+    .title-wrapper {
+      margin-bottom: 32px;
+    }
+  }
+  .button {
+    box-shadow: 0 8px 16px #0554b7;
+    background: linear-gradient(to right, #05cbff, #1e5aff) !important;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    border: 0;
+    border-radius: 21px;
+    color: #fff;
+    width: 128px;
+    padding: 0 15px;
+    display: inline-block;
+    transition: transform .3s, box-shadow .3s;
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 20px #0554b7;
+    }
+    &:active {
+      transform: translateY(4px);
+      box-shadow: 0 4px 8px #0554b7;
+    }
+  }
+  .title-content {
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .@{content21}-wrapper {
+    padding-bottom: 0;
+  }
+}
+
+
+@feature7: feature7;
+
+.@{feature7} {
+  &-wrapper {
+    min-height: 564px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #f7f9fc;
+    margin-bottom: 40px;
+
+    &.home-page-wrapper {
+      .home-page {
+        padding: 64px 24px;
+      }
+    }
+  }
+
+  &-title {
+
+    &-wrapper {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    &-h1 {
+      font-size: 32px;
+      color: @text-color;
+    }
+
+    &-content {
+      margin-top: 16px;
+    }
+  }
+
+  &-block {
+    margin-top: 28px;
+
+    &-group {
+      display: block;
+      padding: 28px 24px;
+      box-shadow: 0 2px 16px fade(#000, 8);
+      background-image: url('https://gw.alipayobjects.com/mdn/rms_ae7ad9/afts/img/A*fMOFSpRXMxsAAAAAAAAAAABkARQnAQ');
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      transition: box-shadow @animate-duration @ease-in-out, transform @animate-duration @ease-in-out;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px fade(#000, 12);
+        
+      }
+
+      &:hover{
+        .code-wrapper {
+          opacity: 0.8;
+        }
+      }
+    }
+
+
+
+    .code-wrapper {
+      position: absolute;
+      background: fade(#fff, 90);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.45s cubic-bezier(0.165, 0.84, 0.44, 1);
+      text-align: center;
+    
+      img {
+         height: 100%;
+      }
+    }
+
+    &-image {
+      float: left;
+      width: 24px;
+      img{
+        width: 24px;
+      }
+    }
+
+    &-title {
+      font-size: 14px;
+      float: left;
+      margin-left: 8px;
+      margin-bottom: 16px;
+      color: @text-color;
+    }
+
+    &-content {
+      clear: both;
+      color: fade(@text-color, 75);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .@{feature7}-wrapper {
+    min-height: 1540px;
+    &.home-page-wrapper {
+      .home-page {
+        padding: 56px 24px;
+      }
+    }
+  }
+}
