@@ -1,0 +1,57 @@
+/* src/components/AfterSalesSection.css */
+.after-sales-section {
+    padding: 60px 334px;
+    background: linear-gradient(180deg, #F9FFFC 0%, #F3F8FF 100%);
+    text-align: center;
+  }
+  
+  .after-sales-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .after-sales-title::before,
+  .after-sales-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 2px;
+    background: #ccc;
+  }
+  .after-sales-title::before { left: calc(50% - 160px); }
+  .after-sales-title::after  { right: calc(50% - 160px); }
+  
+  .after-sales-card {
+    /* background: linear-gradient(180deg, #F0FAFF 0%, #C8E4FF 100%); */
+    background: linear-gradient(180deg, #E4F0FF 0%, #5B9EFF 100%);
+    border-radius: 12px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 20px rgba(0, 98, 255, 0.15);
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-icon {
+    width: 64px;
+    height: 80px;
+    margin-bottom: 16px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+  
+  .card-desc {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.6;
+  }

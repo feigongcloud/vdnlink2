@@ -1,0 +1,227 @@
+/* src/components/PlanSection.css */
+.plan-section {
+    padding: 80px 24px;
+    background: linear-gradient(90deg, #E0FFF3 0%, #D7F3FF 100%);
+    text-align: center;
+  }
+  
+  .plan-pre {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .plan-title {
+    /* font-size: 48px;
+    color: #0062FF;
+    margin: 12px 0;
+    font-weight: bold;
+    letter-spacing: 12px; */
+
+    font-size: 64px;
+    color: #0062FF;
+    margin: 16px 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .plan-sub {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+
+  .solution-header {
+    margin: 60px 0;
+    text-align: center;
+  }
+  
+  .solution-title {
+    position: relative;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 8px;
+  }
+  /* .solution-title::before,
+  .solution-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background: #999;
+    transform-origin: center;
+  }
+  .solution-title::before {
+    left: -90px;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .solution-title::after {
+    right: -90px;
+    transform: translateY(-50%) rotate(-45deg);
+  } */
+  
+  .solution-sub {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+    letter-spacing: 8px;
+  }
+  
+  .plan-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  
+  .plan-card {
+    position: relative;
+    width: 260px;
+    background: #F5F5F5;
+  
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .plan-badge {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    transform: translateY(-50%);
+    background: #0062FF;
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  .plan-img img {
+    width: 100%;
+    border-radius: 8px;
+
+  }
+  
+  .plan-model {
+    margin: 12px 0 8px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* 套餐内容区 */
+  .plan-details {
+    width: 100%;
+   
+    padding: 16px;
+  }
+  .plan-details h4 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+  }
+  .plan-details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .plan-details-list li {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+  }
+  .detail-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+  
+  /* 按钮 */
+  .plan-button {
+    margin: 8px 0 16px;
+    padding: 8px 0;
+    width: 80%;
+    border: 1px solid #0062FF;
+    background: #fff;
+    color: #0062FF;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .plan-notes {
+    list-style: disc;
+    padding: 0 28px;
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+    width: 100%;
+  }
+  .plan-notes li {
+    margin: 4px 0;
+  }
+  
+  /* Hover 高亮彩色 */
+  .plan-card:hover {
+    background: linear-gradient(180deg, #4CD7FF 0%, #0062FF 100%);
+    border-color: #0062FF;
+    box-shadow: 0 8px 24px rgba(0,98,255,0.3);
+  }
+  .plan-card:hover .plan-badge {
+    background: #fff;
+    color: #0062FF;
+  }
+  .plan-card:hover .plan-model,
+  .plan-card:hover .plan-notes li {
+    color: #fff;
+  }
+  .plan-card:hover .plan-button {
+    background: #fff;
+    color: #0062FF;
+  }
+  .plan-card:hover .plan-details h4,
+  .plan-card:hover .plan-details-list li span {
+    color: #fff;
+  }
+
+
+  /* 默认状态下的灰色图标 */
+.detail-item.wifi    .detail-icon { background-image: url('https://g2.vdnlink.cn/em-wifi.svg'); }
+.detail-item.location .detail-icon { background-image: url('https://g2.vdnlink.cn/em-location.svg'); }
+.detail-item.time    .detail-icon { background-image: url('https://g2.vdnlink.cn/em-time.svg'); }
+
+.detail-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  margin-right: 8px;
+  transition: background-image .2s;
+}
+
+/* Hover 卡片时替换成白色版本 */
+.plan-card:hover .detail-item.wifi    .detail-icon { background-image: url('https://g2.vdnlink.cn/em-wifi-white.svg'); }
+.plan-card:hover .detail-item.location .detail-icon { background-image: url('https://g2.vdnlink.cn/em-location-white.svg'); }
+.plan-card:hover .detail-item.time    .detail-icon { background-image: url('https://g2.vdnlink.cn/em-time-white.svg'); }
+
+  /* .detail-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    background-image: url('https://g2.vdnlink.cn/em-wifi.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image .2s;
+  }
+  .plan-card:hover .detail-icon {
+    background-image: url('https://g2.vdnlink.cn/em-wifi-white.svg');
+  } */

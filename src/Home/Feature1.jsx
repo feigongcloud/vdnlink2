@@ -3,7 +3,6 @@ import QueueAnim from 'rc-queue-anim';
 import { Row, Col,Button } from 'antd';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import { getChildrenToRender } from './utils';
-import { SearchOutlined,SaveOutlined } from '@ant-design/icons';
 
 
 class Feature1 extends React.PureComponent {
@@ -40,7 +39,7 @@ class Feature1 extends React.PureComponent {
                   </Col>
                 );
               })}
-              <Button color='#3C63EE' className='morequestion' icon={<SaveOutlined />}>更多问题点击下载</Button>
+              {/* <Button color='#3C63EE' className='morequestion' icon={<SaveOutlined />}>更多问题点击下载</Button> */}
             </QueueAnim>
           </OverPack>
         </div>

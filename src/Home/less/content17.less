@@ -1,15 +1,19 @@
 @content17: content17;
 .@{content17}-wrapper {
-  height: 393px;
-  background: url("https://g1.vdnlink.cn/bgvipspeedcontact.png") no-repeat bottom;
+  height: 580px;
+ // background: url("https://g1.vdnlink.cn/bgvipspeedcontact.png") no-repeat bottom;
+ background-color: #fff;
   background-size: cover;
   background-size: 100%;
   margin: 0 auto;
   overflow: hidden;
-  padding-top: 86px;
+  padding-top: 56px;
   &.home-page-wrapper {
     .title-wrapper {
-      margin-bottom: 32px;
+      margin-bottom: 22px;
+      h1{
+        color: #217BFB !important;
+      }
     }
   }
   .button {
@@ -85,55 +89,35 @@
 
     &-group0 {
       display: block;
-      padding: 28px 24px;
-      box-shadow: 0 2px 16px fade(#000, 8);
-      background-image: url('https://g1.vdnlink.cn/bgpresale.png');
-      background-repeat: no-repeat;
-      background-position: 100% 100%;
-      background-size:100% 100%;
-      background-attachment:fixed;
+      //padding: 28px 24px;
+      // box-shadow: 0 2px 16px fade(#000, 8);
+      // background-image: url('https://g2.vdnlink.cn/wechat3001.jpg');
+      // background-repeat: no-repeat;
+      // background-position: 100% 100%;
+      // background-size:cover;
+      // background-attachment:fixed;
       transition: box-shadow @animate-duration @ease-in-out, transform @animate-duration @ease-in-out;
-
+      // height: 462px;
+      border-radius: 6px;
       &:hover {
         transform: translateY(-5px);
         box-shadow: 0 6px 16px fade(#000, 12);
         
       }
 
-      &:hover{
-        .code-wrapper {
-          opacity: 0.8;
-        }
-      }
+      // &:hover{
+      //   .code-wrapper {
+      //     opacity: 0.8;
+      //   }
+      // }
     }
 
-    &-group1 {
-        display: block;
-        padding: 28px 24px;
-        box-shadow: 0 2px 16px fade(#000, 8);
-        background-image: url('https://g1.vdnlink.cn/bgaftersale.png');
-        background-repeat:no-repeat;
-        background-position: 100% 100%;
-        background-size:100% 100%;
-background-attachment:fixed;
-        transition: box-shadow @animate-duration @ease-in-out, transform @animate-duration @ease-in-out;
   
-        &:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 6px 16px fade(#000, 12);
-          
-        }
-  
-        &:hover{
-          .code-wrapper {
-            opacity: 0.8;
-          }
-        }
-      }
 
 
 
     .code-wrapper {
+      display: contents;
       position: absolute;
       background: fade(#fff, 90);
       width: 100%;
@@ -146,6 +130,7 @@ background-attachment:fixed;
     
       img {
          height: 100%;
+width: -webkit-fill-available;
       }
     }
 

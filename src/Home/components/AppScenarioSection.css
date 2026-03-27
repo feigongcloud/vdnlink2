@@ -1,0 +1,77 @@
+.app-scenario {
+    padding: 60px 254px;
+    /* 整体左右渐变背景：左浅绿→右浅蓝 */
+    background: linear-gradient(45deg, #DCF0FF 0%, #D7F3FF 100%);
+    text-align: center;
+  }
+
+  
+  .app-scenario-title {
+    position: relative;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  .app-scenario-title::before,
+  .app-scenario-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background: #999;
+  }
+  /* .app-scenario-title::before { left: calc(50% - 160px); }
+  .app-scenario-title::after  { right: calc(50% - 160px); } */
+
+  /* 左边斜线 ↓\ */
+.app-scenario-title::before {
+  left: calc(50% - 160px);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* 右边斜线 /↓ */
+.app-scenario-title::after {
+  right: calc(50% - 160px);
+  transform: translateY(-50%) rotate(-45deg);
+}
+  
+  .scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    
+    gap: 24px;
+    justify-items: center;
+  }
+  
+  .scenario-card {
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+  
+  /* 场景图片全铺满，并保持比例裁剪 */
+  .scenario-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* 底部渐变文字条 */
+  .scenario-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 0;
+    background: linear-gradient(90deg, #4CD7FF 0%, #0062FF 100%);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+  }

@@ -1,0 +1,41 @@
+/* src/components/FeatureSection.css */
+.feature-section {
+    position: relative;
+    padding: 60px 124px;
+  
+  }
+  
+
+  
+  /* 卡片样式 */
+  .feature-card {
+    text-align: center;
+    border-radius: 12px;
+    padding: 24px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    min-height: 240px;
+  }
+  
+  /* 图标 */
+  .feature-icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 16px;
+  }
+  
+  /* 标题 */
+  .feature-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    letter-spacing: 1px;
+  }
+  
+  /* 描述 */
+  .feature-desc {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+  }

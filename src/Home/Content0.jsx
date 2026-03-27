@@ -37,7 +37,7 @@ class Content extends React.PureComponent {
                     </div> */}
                     <div class="content0-block-item">
                       <div name="image" class="content0-block-icon">
-                        <img src={item.children[0].children} alt="img"/>
+                        <img src={item.children[0].children} alt="img" loading="lazy"/>
                         </div>
                         <div class={'content'+i.toString()+'-block-bottom'}>
                         <h1 name="title" class={'content'+i.toString()+'-block-title'}>{item.children[1].children}</h1>

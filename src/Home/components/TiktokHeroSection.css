@@ -1,0 +1,128 @@
+.tiktok-hero {
+    /* 整体背景渐变 */
+    /* background: linear-gradient(90deg, #E0FFF3 0%, #D7F3FF 100%); */
+
+    background: linear-gradient(
+        90deg,
+        rgba(224, 255, 243, 1) 0%,    /* #E0FFF3 */
+        rgba(220, 240, 255, 1) 100%   /* #DCF0FF */
+      );
+
+    padding: 80px 24px;
+    text-align: center;
+  }
+  
+  /* Hero 文字区 */
+  .hero-text .hero-pre {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+  .hero-text .hero-title {
+    font-size: 64px;
+    color: #0062FF;
+    margin: 16px 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .hero-text .hero-sub {
+    font-size: 16px;
+    color: #555;
+    margin: 0 0 40px;
+    letter-spacing: 1px;
+  }
+  
+  /* 中间大卡片 */
+  .hero-card {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    background: linear-gradient(180deg, #4CD7FF 0%, #0062FF 100%);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px #0062ff33;
+    display: flex;
+    align-items: center;
+    padding: 32px;
+    color: #fff;
+    background-image: url('https://g2.vdnlink.cn/tk_p1_icon_02.png');
+    background-size: cover;     /* 让整张图始终完整显示 */
+    background-repeat: no-repeat; /* 避免平铺 */
+    background-position: center;  /* 居中对齐 */
+    height: 276px;
+  }
+  
+  /* 价格组 */
+  .price-group {
+    flex: 1;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+  }
+  .price-pre {
+    font-size: 18px;
+  }
+  .price-number-tk {
+    font-size: 96px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .price-unit-tk {
+    font-size: 24px;
+  }
+  
+  /* 二维码组 */
+  .qr-group {
+    flex: 1;
+    text-align: center;
+  }
+  .qr-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 8px;
+  }
+  .qr-label {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  
+  /* 特性列表 */
+  .feature-list-tk {
+    flex: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  .feature-list-tk li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  .feature-list-tk .dot {
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  /* 底部 Pills */
+  .bottom-pills {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 20px;
+  }
+  .pill {
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #0062FF;
+    border: 2px solid #0062FF;
+    border-radius: 24px;
+    background: #fff;
+    cursor: default;
+  }

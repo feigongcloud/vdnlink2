@@ -1,0 +1,41 @@
+.tool-section {
+    /* 左浅绿→右浅蓝 渐变背景 */
+  
+    padding: 80px 24px;
+    text-align: center;
+  }
+  
+  /* 限制内部宽度并居中 */
+  .tool-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* 上方小文案 */
+  .tool-pre {
+    font-size: 28px;
+    font-weight: bolder;
+    color: #333;
+    letter-spacing: 4px;
+    margin: 0;
+  }
+  
+  /* 主标题 */
+  .tool-title {
+    position: relative;
+    font-size: 64px;
+    font-weight: bolder;
+    color: #0062FF;
+    margin: 16px 0;
+    letter-spacing: 2px;
+    display: inline-block;
+  }
+
+  
+  /* 副标题 */
+  .tool-sub {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    letter-spacing: 1px;
+  }

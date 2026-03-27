@@ -1,0 +1,83 @@
+.contact-section {
+    padding: 60px 24px;
+    background: linear-gradient(180deg, #F3FAFF 0%, #E8F4FF 100%);
+    text-align: center;
+  }
+  
+  .contact-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  .contact-title::before,
+  .contact-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 2px;
+    background: #ccc;
+  }
+  .contact-title::before { left: calc(50% - 160px); }
+  .contact-title::after  { right: calc(50% - 160px); }
+  
+  .contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-item {
+    position: relative;
+    width: 240px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* 背景图卡片 */
+  .card-bg {
+    position: absolute;
+    top: 0;
+    width: 220px;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    /* filter: brightness(0.85); */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 白色 QR 容器 */
+  .qr-container {
+    position: relative;
+    z-index: 1;
+    width: 180px;
+    height: 180px;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* 二维码图片 */
+  .qr-container img {
+    width: 160px;
+    height: 160px;
+    display: block;
+  }
+  
+  /* 底部标签 */
+  .contact-label {
+    position: relative;
+    z-index: 1;
+    margin-top: 12px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+  }

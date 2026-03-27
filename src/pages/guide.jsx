@@ -11,6 +11,13 @@ import Feature0 from '../Home/Feature0';
 import Feature1 from '../Home/Feature1';
 import Content21 from '../Home/Content21';
 import Content17 from '../Home/Content17';
+import Content8 from '../Home/Content8';
+import Combo1 from '../Home/Combo1';
+import Combo2 from '../Home/Combo2';
+import Combo3 from '../Home/combo3';
+import Combo4 from '../Home/Combo4';
+import CarouselBanner2 from '../Home/CarouselBanner2';
+import AppContent17 from '../Home/AppContent17';
 
 import {
     Nav00DataSource,
@@ -20,6 +27,11 @@ import {
     Footer10DataSource,
     Content210DataSource,
     Content170DataSource,
+    Content80DataSource,
+    Combo0DataSource,
+    Combo1DataSource,
+    Combo2DataSource,
+    Combo3DataSource
   } from '../Home/data.source';
 
   import '../Home/less/antMotionStyle.less';
@@ -72,20 +84,54 @@ export default class Guide extends React.Component {
               isMobile={this.state.isMobile}
             />,
 
-            <Banner2
-            id="Banner0_2"
-            key="Banner0_2"
-            dataSource={Banner02DataSource}
-            isMobile={this.state.isMobile}
-          />,
+          //   <Banner2
+          //   id="Banner0_2"
+          //   key="Banner0_2"
+          //   dataSource={Banner02DataSource}
+          //   isMobile={this.state.isMobile}
+          // />,
 
-        <Feature0
-          id="Feature0_0"
-          key="Feature0_0"
-          dataSource={Feature00DataSource}
-          isMobile={this.state.isMobile}
+
+          <CarouselBanner2/>,
+        // <Feature0
+        //   id="Feature0_0"
+        //   key="Feature0_0"
+        //   dataSource={Feature00DataSource}
+        //   isMobile={this.state.isMobile}
+        // />,
+
+        // <Content8 
+        // id="Content8_0"
+        // key="Content8_0"
+        // dataSource={Content80DataSource}
+        // isMobile={this.state.isMobile}
+        // />,
+
+        <Combo1
+        id="combo0_0"
+           key="combo0_0"
+           dataSource={Combo0DataSource}
         />,
 
+        <Combo3
+        id="combo0_0"
+           key="combo0_0"
+           dataSource={Combo2DataSource}
+        />,
+
+        <Combo2
+        id="combo0_0"
+           key="combo0_0"
+           dataSource={Combo1DataSource}
+        />,
+
+      
+
+        <Combo4
+        id="combo0_0"
+           key="combo0_0"
+           dataSource={Combo3DataSource}
+        />,
         
         <Feature1 
         id="Feature1_0"
@@ -94,14 +140,14 @@ export default class Guide extends React.Component {
         isMobile={this.state.isMobile}
         />,
 
-        <Content21 
-        id="Content21_0"
-        key="Content21_0"
-        dataSource={Content210DataSource}
-        isMobile={this.state.isMobile}
-        />,
+        // <Content21 
+        // id="Content21_0"
+        // key="Content21_0"
+        // dataSource={Content210DataSource}
+        // isMobile={this.state.isMobile}
+        // />,
 
-        <Content17
+        <AppContent17
         id="Content17_0"
         key="Content17_0"
         dataSource={Content170DataSource}

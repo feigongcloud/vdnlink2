@@ -4,6 +4,7 @@ import Favicon from 'react-favicon';
 import {Helmet} from "react-helmet";
 import favicon from '../assets/favicon-online.ico';
 import SuspendButton from 'suspend-button'
+import HomeV2 from '../Home/index_v2';
 
 export default function() {
   return (
@@ -13,31 +14,34 @@ export default function() {
 
      <meta
       name="title"
-      content="TikTok直播专线_tiktok网络专线_tiktok加速器_跨境电商直播_一键开播_独享原生IP_国际专线_外贸专线_跨境专线_稳定安全合规_VIPSpeed"
+      content="TikTok直播专线_tiktok短视频矩阵运营_TK加速器_企业跨境办公网络_AIGC网络访问_原生IP独享_合规普惠_稳定流畅_视界云VIPSpeed"
     />
 
      <meta
       name="keywords"
-      content="tiktok直播专线,Tiktok网络专线,TikTok加速器,TK海外专线,TK直播,TK一键开播,tiktok专线加速,tiktok电商直播,跨境电商直播."
+      content="tiktok直播,tiktok国际版,美国IP节点,TK线路,美国直播专线,英区直播专线,英美专线,tk短视频矩阵,TikTok运营,TK网络,tk直播,海外直播,企业跨境办公,chatgpt网络,AI访问"
     />
     <meta
       name="description"
-      content="tiktok直播网络专线,VIPSpeed跨境电商海外专线加速方案,0成本免费测试、0门槛即开即用。TikTok直播稳定流畅,海外本地固定IP安全合规,1000家跨境电商大卖家选择,支持东南亚/美国/英国等海外多平台(TikTok,Facebook,Instagram等)跨境电商直播短视频加速，满足社媒/电商养号/直播/短视频等多场景。"
+      content="视界云VIPspeed全球跨境网络专线,0门槛试用!网络支持:全球50+国家/地区海外原生IP独享、TikTok直播快更稳,TK短视频矩阵运营“矩”划算,TK做号养号流量佳,企业跨境办公,访问国内或国外都一样快,无感切换智能分流,ChatGPT、Midjourney等热门AI生成式AIGC网络访问"
     />
 
-   
-                <title>VIPSpeed</title>
+    <title>视界云VIPspeed</title>
 
 
 <script>
-{'var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?74570af8a2750e0757c6b0490a75e3e6";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();'}
+{'var _hmt1 = _hmt1 || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?74570af8a2750e0757c6b0490a75e3e6";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();'}
+</script>
+
+<script>
+{'var _hmt2 = _hmt2 || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?bd6a56fe54fb6d5fc43846977f967f39";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();'}
 </script>
 
             
             </Helmet>
      <Favicon url={favicon} />
      
-     <Home />
+     <HomeV2 />
     
      {/* <SuspendButton img="https://g1.vdnlink.cn/jump-wechat.png" style={{"width":200,"height":200,"right":24,"z-index":999999,"border-radius":0}}></SuspendButton> */}
      

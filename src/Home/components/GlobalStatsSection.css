@@ -1,0 +1,70 @@
+/* src/components/GlobalStatsSection.css */
+.global-section {
+    padding: 60px 104px;
+    text-align: center;
+    /* 新增：从上到下的背景渐变 */
+ 
+  background: linear-gradient(180deg, #F9FFFC 0%, #F3F8FF 100%);
+  }
+  
+  .global-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    position: relative;
+  }
+  .global-title::before,
+  .global-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 2px;
+    background: #ccc;
+  }
+  .global-title::before { left: calc(50% - 160px); }
+  .global-title::after  { right: calc(50% - 160px); }
+  
+  .global-content {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    /* 整体高度可根据需要调整 */
+    padding-top: 40px;
+  }
+  
+  .global-bg {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    filter: brightness(0.9);
+  }
+  
+  .stats-row {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    padding: 0 24px;
+  }
+  
+  .stats-item {
+    text-align: center;
+  }
+  
+  .stats-value {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .stats-underline {
+    width: 40px;
+    height: 2px;
+    background: #fff;
+    margin: 8px auto;
+  }
+  
+  .stats-label {
+    font-size: 32px;
+    color: #fff;
+  }

@@ -13,15 +13,17 @@ class Content17 extends React.PureComponent {
 
     const childrenToRender = dataSource.blockWrapper.children.map((item, i) => (
       <Col {...item} key={i.toString()}>
-        <a {...item.children}  class={'feature7-block-group'+i.toString()} >
-          {item.children.children.map(getChildrenToRender)}
-          <div className="code-wrapper">
-           {/* <img src='http://p1.ycadmin.com/qrcode-vdn-sale.png' /> */}
+        <div {...item.children}  class={'feature7-block-group'+i.toString()}>
+          {/* {item.children.children.map(getChildrenToRender)} */}
+          <div className="code-wrapper" >
+             {/* <img src='https://g2.vdnlink.cn/wechat3001.jpg' loading="lazy" />  */}
+             <img src='https://g2.vdnlink.cn/vdnlink-lxwmqr.jpg' loading="lazy" /> 
+             
             
-           {i==0?<img src='https://g1.vdnlink.cn/vipspeedkf.png' />:<img src='https://g1.vdnlink.cn/vipspeedgzh.png' />}   
+           {/* {i==0?<img src='https://g1.vdnlink.cn/vipspeedkf01.svg'  width={360} />:<img src='https://g1.vdnlink.cn/vipspeedkf02.svg' width={360} />}    */}
            
           </div>
-        </a>
+        </div>
         
       </Col>
     ));
@@ -29,7 +31,7 @@ class Content17 extends React.PureComponent {
     delete props.dataSource;
     delete props.isMobile;
     return (
-      <OverPack {...props} {...dataSource.OverPack}>
+      <OverPack {...props} {...dataSource.OverPack} >
         <QueueAnim
           type="bottom"
           leaveReverse

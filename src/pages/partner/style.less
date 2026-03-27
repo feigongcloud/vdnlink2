@@ -1,0 +1,77 @@
+@import '~antd/es/style/themes/default.less';
+@import './utils/utils.less';
+
+.coverCardList {
+  margin-bottom: -24px;
+  overflow: initial;
+  width: calc(100% - 112px);
+  margin: auto;
+  border-radius: 4px;
+  box-shadow: 0 32px 32px rgba(34,94,222,.08);
+  padding: 24px;
+  .card {
+
+    border-radius: 6px !important;
+    box-shadow: 6px 6px 3px 0px rgba(0, 0, 0, 0.75);
+
+    :global {
+      .ant-card-meta-title {
+        margin-bottom: 4px;
+        & > a {
+          display: inline-block;
+          max-width: 100%;
+          color: @heading-color;
+        }
+       
+      }
+
+      .ant-card-meta-description {
+        height: 44px;
+        overflow: hidden;
+        line-height: 22px;
+      }
+
+      img{
+        width:100%;
+        height: 100%;
+      }
+
+      .ant-card-body{
+        padding: 0;
+      }
+    }
+
+    &:hover {
+      :global {
+        .ant-card-meta-title > a {
+          color: @primary-color;
+        }
+      }
+    }
+  }
+
+  .cardItemContent {
+    display: flex;
+    height: 20px;
+    margin-top: 16px;
+    margin-bottom: -4px;
+    line-height: 20px;
+    & > span {
+      flex: 1;
+      color: @text-color-secondary;
+      font-size: 12px;
+    }
+    .avatarList {
+      flex: 0 1 auto;
+    }
+  }
+  .cardList {
+    margin-top: 24px;
+  }
+
+  :global {
+    .ant-list .ant-list-item-content-single {
+      max-width: 100%;
+    }
+  }
+}

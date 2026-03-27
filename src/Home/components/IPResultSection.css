@@ -1,0 +1,101 @@
+.ip-section {
+    padding: 60px 24px;
+    background: linear-gradient(90deg, #E4FFF2 0%, #EAF3FF 100%);
+    text-align: center;
+  }
+  
+  .ip-title {
+    position: relative;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+    display: inline-block;
+  }
+  
+  .ip-title::before,
+  .ip-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 2px;
+    background: #999;
+    transform-origin: center;
+  }
+  
+  /* 左侧 45° 斜线 */
+  .ip-title::before {
+    left: -90px; /* 根据文字宽度微调 */
+    transform: translateY(-50%) rotate(45deg);
+  }
+  
+  /* 右侧 -45° 斜线 */
+  .ip-title::after {
+    right: -90px;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  .ip-cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+  }
+  
+  /* 单张卡片 */
+  .ip-card {
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid #0062FF;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(0, 98, 255, 0.15);
+  }
+  
+  /* 截图区域 */
+  .ip-card-image img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  /* 底部链接区 */
+  .ip-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    background: #fff;
+  }
+  
+  .ip-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0062FF;
+    /* 如果有 icon 图，可以把它换成 <img> 并注释掉这段 */
+  }
+  
+  .ip-card-footer a {
+    font-size: 18px;
+    color: #0062FF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity .2s;
+  }
+  
+  .ip-card-footer a:hover {
+    opacity: 0.7;
+  }
+  
+  /* 响应式处理：小屏一张一行 */
+  @media (max-width: 820px) {
+    .ip-card {
+      max-width: 100%;
+    }
+  }

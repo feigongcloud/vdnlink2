@@ -20,7 +20,7 @@ class Footer extends React.Component {
 <h2 {...title}>
             {typeof title.children === 'string' &&
             title.children.match(isImg) ? (
-              <img src={title.children} width="100%" alt="img" />
+              <img src={title.children} width="100%" alt="img" loading="lazy" />
             ) : (
               title.children
             )}
@@ -41,7 +41,7 @@ class Footer extends React.Component {
     delete props.isMobile;
     const childrenToRender = this.getLiChildren(dataSource.block.children);
     return (
-      <div {...props} {...dataSource.wrapper}>
+      <div {...props} {...dataSource.wrapper} id="contactus">
         <OverPack {...dataSource.OverPack}>
           <QueueAnim
             type="bottom"
@@ -52,6 +52,7 @@ class Footer extends React.Component {
           >
             {childrenToRender}
           </QueueAnim>
+          {/* <div>友情链接</div> */}
           <TweenOne
             animation={{ y: '+=30', opacity: 0, type: 'from' }}
             key="copyright"
@@ -62,6 +63,7 @@ class Footer extends React.Component {
                 {dataSource.copyright.children}
               </div>
             </div>
+          
           </TweenOne>
         </OverPack>
         <a href="https://xyt.xcc.cn/getpcInfo?sn=1613407342110416896&language=CN&certType=8&url=*.vdnlink.cn" target="_blank" style={{position: 'relative',display: 'inline-block',height: '38px'}}>

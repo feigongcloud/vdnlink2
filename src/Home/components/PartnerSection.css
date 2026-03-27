@@ -1,0 +1,70 @@
+/* PartnerSection.css */
+.partner-section {
+    padding: 60px 24px;
+
+    background: linear-gradient(180deg, #FFFFFF 0%, #E6F2FF 100%);
+
+    text-align: center;
+  }
+  .partner-title {
+    position: relative;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 80px;
+  }
+  .partner-title::before,
+  .partner-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 2px;
+    background: #ccc;
+  }
+  .partner-title::before { left: calc(50% - 160px); }
+  .partner-title::after  { right: calc(50% - 160px); }
+  
+  .partner-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;  /* 垂直行间距 */
+  }
+  
+  .partner-row {
+    display: flex;
+    column-gap: 24px;  /* 水平列间距 */
+  }
+  
+  /* 第1行 & 第3行：四个项目水平居中 */
+  .row--first,
+  .row--third {
+    justify-content: center;
+  }
+  
+  /* 第2行：三个项目，向右偏移半个项目宽度 + 半个间距 */
+  .row--second {
+    justify-content: flex-start;
+    margin-top: -38px;
+    margin-bottom: -38px;
+  }
+  
+  /* 菱形容器保持不变 */
+  .partner-item {
+    width: 142px;
+    aspect-ratio: 1;
+    background: rgba(255,255,255,0.6);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: rotate(45deg);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 54px;
+  }
+  .partner-item img {
+    width: 158px;
+    transform: rotate(-45deg);
+    display: block;
+  }

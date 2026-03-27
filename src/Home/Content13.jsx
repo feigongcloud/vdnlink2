@@ -22,7 +22,7 @@ const Content13=() => {
 
     const renderLogo = () => {
         return (
-            <img src='https://lf3-static.bytednsdoc.com/obj/eden-cn/ptlz_zlp/ljhwZthlaukjlkulzlp/root-web-sites/semi_logo.svg' alt='semi_logo' style={{ width: 87, height: 31 }} />   
+            <img src='https://lf3-static.bytednsdoc.com/obj/eden-cn/ptlz_zlp/ljhwZthlaukjlkulzlp/root-web-sites/semi_logo.svg' loading="lazy" alt='semi_logo' style={{ width: 87, height: 31 }} />   
         );
     };
 
@@ -46,7 +46,7 @@ const Content13=() => {
 
                             <Space align='center'   style={{ paddingTop:60 }} >
                             <div >
-                                <img src={src}  style={{ width:285,height:180 }} />
+                                <img src={src}  style={{ width:285,height:180 }}  loading="lazy"/>
                             </div>
 
                             <Space vertical align='start' spacing='medium' style={titleStyle}>

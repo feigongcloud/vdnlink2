@@ -1,6 +1,6 @@
 /* eslint no-undef: 0 */
 /* eslint arrow-parens: 0 */
-import React from 'react';
+import React,{Suspense,lazy} from 'react';
 import { enquireScreen } from 'enquire-js';
 
 import Nav0 from './Nav0';
@@ -15,8 +15,18 @@ import Content16 from './Content16';
 import Content17 from './Content17';
 import Feature18 from './Content18';
 import Footer1 from './Footer1';
+// import CarouselBanner from './CarouselBanner';
+import Product01 from './Product01';
+import Product02 from './Product02';
+import Product03 from './Product03';
+import Product04 from './Product04';
+import Page1 from './page1';
+import Evaluate from './Evaluate';
+import AppContent17 from './AppContent17';
 
 
+
+const LazyComponent = lazy(() => import('./CarouselBanner'));
 
 import {
   Nav00DataSource,
@@ -75,19 +85,39 @@ export default class Home extends React.Component {
         dataSource={Nav00DataSource}
         isMobile={this.state.isMobile}
       />,
-      <Banner0
-        id="Banner0_1"
-        key="Banner0_1"
-        dataSource={Banner01DataSource}
-        isMobile={this.state.isMobile}
-      />,
+      // <Banner0
+      //   id="Banner0_1"
+      //   key="Banner0_1"
+      //   dataSource={Banner01DataSource}
+      //   isMobile={this.state.isMobile}
+      // />,
 
-      <Content3
-      id="Content3_0"
-      key="Content3_0"
-      dataSource={Content30DataSource}
-      isMobile={this.state.isMobile}
-    />,
+      // <CarouselBanner/>,
+
+      <Suspense fallback={<div>Loading...</div>}>
+      <LazyComponent />
+    </Suspense>,
+
+      <Product03/>,
+
+      <Product01/>,
+
+      <Product02/>,
+
+    
+
+      <Product04/>,
+
+      <Page1 key="page1" isMobile={this.state.isMobile} />,
+
+    //   <Content3
+    //   id="Content3_0"
+    //   key="Content3_0"
+    //   dataSource={Content30DataSource}
+    //   isMobile={this.state.isMobile}
+    // />,
+
+    <Evaluate/>,
 
     <Content11 
     id="Content1_1"
@@ -96,15 +126,15 @@ export default class Home extends React.Component {
     isMobile={this.state.isMobile}
     />,
 
-      <Content0
-        id="Content0_0"
-        key="Content0_0"
-        dataSource={Content00DataSource}
-        isMobile={this.state.isMobile}
-      />,
+      // <Content0
+      //   id="Content0_0"
+      //   key="Content0_0"
+      //   dataSource={Content00DataSource}
+      //   isMobile={this.state.isMobile}
+      // />,
 
 
-      <Content13 />,
+      // <Content13 />,
 
 
       <Content5
@@ -121,7 +151,7 @@ export default class Home extends React.Component {
       isMobile={this.state.isMobile}
     />, 
 
-      <Content17
+      <AppContent17
       id="Content17_0"
       key="Content17_0"
       dataSource={Content170DataSource}

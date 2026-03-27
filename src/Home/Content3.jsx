@@ -49,7 +49,7 @@ class Content3 extends React.PureComponent {
             key="img"
             {...childObj.icon}
           >
-            <img src={childObj.icon.children} width="100%" alt="img" />
+            <img src={childObj.icon.children} width="100%" alt="img" loading="lazy" />
           </TweenOne>
           <div {...childObj.textWrapper}>
             <TweenOne

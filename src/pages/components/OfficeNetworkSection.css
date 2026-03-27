@@ -1,0 +1,149 @@
+.office-section {
+    padding: 60px 24px;
+    background: linear-gradient(90deg, #E0FFF3 0%, #D7F3FF 100%);
+    text-align: center;
+  }
+  
+  /* 标题区 */
+  .office-header {
+    margin-bottom: 40px;
+  }
+  .office-title {
+    position: relative;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+  }
+  /* .office-title::before,
+  .office-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 2px;
+    background: #999;
+    transform-origin: center;
+  }
+  .office-title::before {
+    left: -80px;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .office-title::after {
+    right: -80px;
+    transform: translateY(-50%) rotate(-45deg);
+  } */
+  .office-sub {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* 卡片容器 */
+  .office-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  
+  /* 单张卡片 */
+  .office-card {
+    width: 260px;
+    background: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: background 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* 卡片图片 */
+  .card-img img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* 套餐内容 */
+  .card-details {
+    width: 100%;
+    padding: 16px;
+  }
+  .card-details h4 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+  }
+  .card-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .card-details li {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+  }
+  /* 图标占位 & 切换 */
+  .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 8px;
+    transition: background-image .2s;
+  }
+  .icon-wifi     { background-image: url('https://g2.vdnlink.cn/em-wifi.svg'); }
+  .icon-location { background-image: url('https://g2.vdnlink.cn/em-location.svg'); }
+  .icon-time     { background-image: url('https://g2.vdnlink.cn/em-time.svg'); }
+  
+  /* 按钮 */
+  .card-btn {
+    margin: 16px 0;
+    padding: 8px 0;
+    width: 80%;
+    border: 1px solid #0062FF;
+    background: #fff;
+    color: #0062FF;
+    font-size: 16px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  /* 备注 */
+  .card-notes {
+    list-style: disc;
+    padding: 0 28px;
+    margin: 0;
+    width: 100%;
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+
+  }
+  .card-notes li {
+    margin: 4px 0;
+  }
+  
+  /* Hover 效果 */
+  .office-card:hover {
+    background: linear-gradient(180deg, #4CD7FF 0%, #0062FF 100%);
+    box-shadow: 0 8px 24px rgba(0,98,255,0.3);
+  }
+  .office-card:hover .card-btn {
+    background: #fff;
+    color: #0062FF;
+  }
+  /* 切换图标到白版 */
+  .office-card:hover .detail-item.wifi    .detail-icon     { background-image: url('https://g2.vdnlink.cn/em-wifi-white.svg'); }
+  .office-card:hover .detail-item.location    .detail-icon { background-image: url('https://g2.vdnlink.cn/em-location-white.svg'); }
+  .office-card:hover .detail-item.time    .detail-icon     { background-image: url('https://g2.vdnlink.cn/em-time-white.svg'); }
+  /* hover 时文字变白 */
+  .office-card:hover .card-details h4,
+  .office-card:hover .txt,
+  .office-card:hover .card-notes li {
+    color: #fff;
+  }

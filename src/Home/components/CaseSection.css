@@ -1,0 +1,138 @@
+/* src/components/CaseSection.css */
+.case-section {
+    padding: 60px 254px;
+    background: #f5faff;
+  }
+  
+  .case-section-title {
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  .case-section-title::before,
+  .case-section-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 2px;
+    background: #ccc;
+  }
+  .case-section-title::before { left: calc(50% - 160px); }
+  .case-section-title::after  { right: calc(50% - 160px); }
+  
+  /* .case-box {
+    background: #fff;
+    border: 2px solid #66b4ff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 32px;
+  } */
+
+  .case-box {
+ 
+    border-radius: 12px;
+    margin-bottom: 32px;
+  }
+  
+  .case-box-title {
+    font-size: 24px;
+    color: #0062ff;
+    margin-bottom: 12px;
+  }
+  
+  .case-box-desc {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  
+  .case-steps {
+    display: flex;
+    justify-content: space-between;
+  }
+  .case-step {
+    text-align: center;
+    flex: 1;
+  }
+  /* .step-badge {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(140deg, #4cd7ff 0%, #0062ff 100%);
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+  } */
+
+
+  .cs-step-badge {
+    /* 1. 固定宽高，保证是正方形 */
+    width: 40px;
+    height: 40px;
+  
+    /* 2. 用 clip-path 画菱形（顶点在正中）*/
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  
+    /* 3. 渐变背景 */
+    background: linear-gradient(140deg, #4cd7ff 0%, #0062ff 100%);
+  
+    /* 4. flex 居中文字 */
+    display: inline-block;
+    align-content: center;
+  
+    /* 5. 文字样式 */
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+  
+    /* 6. 底部间距 */
+    margin-bottom: 8px;
+  }
+
+  .step-text {
+    font-size: 12px;
+    color: #333;
+  }
+  
+  .case-img-col {
+    text-align: center;
+  }
+  .case-img {
+    max-width: 70%;
+    border-radius: 8px;
+  }
+
+  .case-img-bg{
+    width: -webkit-fill-available;
+  }
+  
+  .case-diagram {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px;
+    border: 1px dashed #0062ff;
+    border-radius: 8px;
+  }
+  .diagram-step {
+    background: #e8f5ff;
+    color: #0062ff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin: 4px;
+  }
+  .diagram-arrow {
+    font-size: 14px;
+    color: #0062ff;
+    margin: 0 4px;
+  }
+  .tik-icon {
+    background: #0062ff;
+    color: #fff;
+  }
